@@ -1,4 +1,4 @@
-FROM chisbread/wine-box:latest
+FROM sureer/wine-box:8.0.2
 COPY target/root/ /
 # init target with GUI
 RUN bash -c 'nohup /entrypoint.sh 2>&1 &' && sleep 5 && /payloads.sh \
