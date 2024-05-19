@@ -18,4 +18,5 @@ function run-target() {
 sleep 5
 inject-monitor &
 run-target &
+xybot-start &
 wait
